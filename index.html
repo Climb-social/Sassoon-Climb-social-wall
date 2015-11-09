@@ -67,15 +67,19 @@
 
     <style>
 
-        .climb__tile__message, .climb__tile a {
+        .climb__message {
+            margin-bottom: 30px;
+        }
+
+        .climb__message, .climb__tile a {
             color: white;
         }
 
-        .climb__tile, .climb__tile__image {
+        .climb__tile, .climb__image {
             border-radius: 0 !important;
         }
 
-        .climb__tile__image {
+        .climb__image {
             -webkit-filter: grayscale(100%);
             -webkit-transition: .5s ease-out;
             -moz-filter: grayscale(100%);
@@ -83,11 +87,9 @@
             -o-filter: grayscale(100%);
             -o-transition: .5s ease-out;
             filter: grayscale(100%);
-
-            max-width: none !important;
         }
 
-        .climb__tile:hover .climb__tile__image {
+        .climb__tile:hover .climb__image {
             -webkit-filter: grayscale(0%);
             -webkit-transition: .5s ease-out;
             -moz-filter: grayscale(0%);
@@ -99,16 +101,18 @@
 
         .climb__tile {
             background-color: transparent !important;
-            height: 400px !important;
+            height: 350px !important;
         }
 
         .climb__tile__content {
             background-color: rgba(51, 191, 187, .7) !important;
+            z-index: 6;
         }
 
         .climb__tile--has-media .climb__tile__content {
             position: relative;
             top: 130px;
+            height: 100px;
 
             -webkit-transition: .25s ease-out;
             -moz-transition: .25s ease-out;
