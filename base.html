@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sassoon Social Wall</title>
+
+    <style>
+
+        .climb__tile, .climb__tile__image {
+            border-radius: 0 !important;
+        }
+
+        .climb__tile__image {
+            -webkit-filter: grayscale(100%);
+            -webkit-transition: .5s ease-out;
+            -moz-filter: grayscale(100%);
+            -moz-transition: .5s ease-out;
+            -o-filter: grayscale(100%);
+            -o-transition: .5s ease-out;
+            filter: grayscale(100%);
+
+            max-width: none !important;
+        }
+
+        .climb__tile:hover .climb__tile__image {
+            -webkit-filter: grayscale(0%);
+            -webkit-transition: .5s ease-out;
+            -moz-filter: grayscale(0%);
+            -moz-transition: .5s ease-out;
+            -o-filter: grayscale(0%);
+            -o-transition: .5s ease-out;
+            filter: grayscale(0%);
+        }
+
+        .climb__tile {
+            background-color: transparent !important;
+            height: 400px !important;
+        }
+
+        .climb__tile__content {
+            background-color: rgba(51, 191, 187, .7) !important;
+        }
+
+        .climb__tile--has-media .climb__tile__content {
+            position: relative;
+            top: 130px;
+
+            -webkit-transition: .25s ease-out;
+            -moz-transition: .25s ease-out;
+            -o-transition: .25s ease-out;
+            `
+        }
+
+        .climb__tile--has-media:hover .climb__tile__content {
+            top: 0;
+        }
+
+        .climb__tile {
+            position: relative;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<script src="https://fb.me/react-0.14.0.min.js"></script>
+<script src="https://fb.me/react-dom-0.14.0.min.js"></script>
+<div class="climb-wall" data-collection-id="561ba63445284e1740e016f7" data-limit="12"></div>
+<script src="https://cdn.rawgit.com/Climb-social/react-climb-social/v1.0.0/dist/react-climb-social.min.js"></script>
+
+</body>
+</html>
